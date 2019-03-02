@@ -1,0 +1,66 @@
+Postman examples
+
+//GET
+http://localhost:60375/api/seatrentals
+
+//POST
+http://localhost:60375/api/seatrentals
+Header
+Content-Type application/json
+Raw Data JSON
+{
+
+    "SeatId": 5,
+    "MeetId": 1,
+    "DevName": "Genevieve",
+    "DevEmail": "genevieve@genevieve.com",
+
+}
+
+//PUT
+http://localhost:60375/api/seatrentals/7
+Header
+Content-Type application/json
+{
+
+  "SeatId": 3,
+  "MeetId": 2,
+  "DevName": "Frank",
+  "DevEmail": "frank@frank.com"
+}
+
+//DELETE
+http://localhost:60375/api/seatrentals/8
+
+POST MANY
+
+{
+  "SeatRentalDtoA" : 
+  {
+    "SeatId": 1,
+    "MeetId": 1,
+    "DevName": "Daryll",
+    "DevEmail": "daryll@daryll.com",
+  },
+  "SeatRentalDtoB" : 
+  {
+    "SeatId": 2,
+    "MeetId": 1,
+    "DevName": "Daryll",
+    "DevEmail": "daryll@daryll.com",
+  },
+  "SeatRentalDtoC" : 
+  {
+    "SeatId": 3,
+    "MeetId": 1,
+    "DevName": "Daryll",
+    "DevEmail": "daryll@daryll.com",
+  },
+  "SeatRentalDtoD" : 
+  {
+    "SeatId": 4,
+    "MeetId": 1,
+    "DevName": "Daryll",
+    "DevEmail": "daryll@daryll.com",
+  },
+}
